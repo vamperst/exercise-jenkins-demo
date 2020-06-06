@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+cd /dotnet/src/App
+
+dotnet publish -c Release
+rm -rf /tmp/publish
+mv bin/Release/netcoreapp2.0/publish /tmp
+mkdir -p /tmp/publish/src/App/Common/Config
+cp Common/Config/*.json /tmp/publish/src/App/Common/Config
+mkdir -p /tmp/publish/src/App/Data
+cp -r Data/* /tmp/publish/src/App/Data

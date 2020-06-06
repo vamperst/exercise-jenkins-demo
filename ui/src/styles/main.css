@@ -1,0 +1,16 @@
+.view {
+    padding: 16px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .15s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.lined {
+  padding: 16px 0;
+  border-bottom: 1px solid;
+}

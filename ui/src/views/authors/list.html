@@ -1,0 +1,17 @@
+<div>
+
+    <div class="row">
+        <div class="col">
+            <h1><i class="fa fa-users"></i> Authors</h1>
+        </div>
+    </div>
+
+    <div class="row lined" v-for="author of authors">
+        <div class="col">
+            <router-link :to="'/author/' + author.id">
+                <h2>{{ author.name }}</h2>
+            </router-link>
+        </div>
+    </div>
+
+</div>
